@@ -1,0 +1,10 @@
+<h1>Destroy All Monsters</h1>
+
+<table>
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= user.first_name %> <%= user.last_name %></td>
+      <td><%= link_to 'Show', user_path(user) %></td>
+    </tr>
+  <% end %>
+</table>
